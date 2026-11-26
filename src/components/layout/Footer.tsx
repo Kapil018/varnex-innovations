@@ -6,9 +6,9 @@ export default function Footer() {
     <footer className="border-t border-white/10 bg-[#171A1C] text-white">
 
       {/* Main Footer */}
-      <div className="mx-auto max-w-7xl px-6 py-12">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:py-14">
 
-        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-9 sm:grid-cols-2 sm:gap-10 lg:grid-cols-4 lg:gap-8">
 
           {/* Column 1: Company Information */}
           <div>
@@ -39,7 +39,7 @@ export default function Footer() {
 
             </Link>
 
-            <p className="mt-3 text-xs text-gray-400">
+            <p className="mt-3 text-xs leading-6 text-gray-400">
               Innovating Motion. Empowering Ideas.
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function Footer() {
               Quick Links
             </h3>
 
-            <ul className="space-y-2 text-sm text-gray-400">
+            <ul className="space-y-3 text-sm text-gray-400">
 
               <li>
                 <Link href="/" className="transition-colors hover:text-primary">
@@ -85,7 +85,7 @@ export default function Footer() {
               Our Products
             </h3>
 
-            <ul className="space-y-2 text-sm text-gray-400">
+            <ul className="space-y-3 text-sm text-gray-400">
 
               <li>
                 <Link href="/products" className="transition-colors hover:text-primary">
@@ -126,14 +126,14 @@ export default function Footer() {
                 type="email"
                 placeholder="Your email address"
                 disabled
-                className="min-w-0 flex-1 bg-white px-3 py-3 text-xs text-gray-800 outline-none placeholder:text-gray-500 disabled:cursor-not-allowed"
+                className="min-w-0 flex-1 rounded-l-sm bg-white px-3 py-3 text-xs text-gray-800 outline-none placeholder:text-gray-500 disabled:cursor-not-allowed"
               />
 
               <button
                 type="button"
                 disabled
                 aria-label="Newsletter subscription coming soon"
-                className="bg-primary px-4 text-white opacity-70"
+                className="rounded-r-sm bg-primary px-4 text-white opacity-70"
               >
                 →
               </button>
@@ -148,15 +148,15 @@ export default function Footer() {
       {/* Bottom Footer */}
       <div className="border-t border-white/10">
 
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-6 py-5 md:flex-row">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-4 py-6 text-center sm:px-6 lg:flex-row lg:gap-6 lg:text-left">
 
           {/* Copyright */}
-          <p className="text-xs text-gray-500">
+          <p className="text-xs leading-5 text-gray-500">
             © 2026 VarnexInnovations. All rights reserved.
           </p>
 
           {/* Legal Links */}
-          <div className="flex items-center gap-5 text-xs text-gray-400">
+          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-xs text-gray-400">
 
             <Link href="/privacy-policy" className="transition-colors hover:text-primary">
               Privacy Policy
@@ -169,17 +169,17 @@ export default function Footer() {
           </div>
 
           {/* Social Media */}
-          <div className="flex items-center gap-4 text-xs font-bold text-gray-400">
+          <div className="flex items-center justify-center gap-5 text-xs font-bold text-gray-400">
 
-            <a href="#" aria-label="LinkedIn" className="hover:text-primary">
+            <a href="#" aria-label="LinkedIn" className="transition-colors hover:text-primary">
               in
             </a>
 
-            <a href="#" aria-label="YouTube" className="hover:text-primary">
+            <a href="#" aria-label="YouTube" className="transition-colors hover:text-primary">
               ▶
             </a>
 
-            <a href="#" aria-label="Facebook" className="hover:text-primary">
+            <a href="#" aria-label="Facebook" className="transition-colors hover:text-primary">
               f
             </a>
 

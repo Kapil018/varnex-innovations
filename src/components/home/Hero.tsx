@@ -6,12 +6,12 @@ export default function Hero() {
     return (
         <section className="relative overflow-hidden bg-[#111416] text-white">
 
-            <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
+            <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-2 lg:gap-12 lg:py-28">
 
                 {/* Left: Hero Content */}
                 <div className="flex flex-col items-start">
 
-                    <p className="mb-6 text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+                    <p className="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-primary sm:mb-6 sm:text-sm">
                         Engineering Excellence
                     </p>
 
@@ -22,7 +22,7 @@ export default function Hero() {
                         </span>
                     </h1>
 
-                    <p className="mt-6 max-w-xl text-base leading-8 text-gray-400">
+                    <p className="mt-5 max-w-xl text-sm leading-7 text-gray-400 sm:mt-6 sm:text-base sm:leading-8">
                         Precision-engineered motor solutions designed for demanding
                         high-speed applications. Discover reliable performance,
                         innovative engineering and quality manufacturing from
@@ -30,18 +30,18 @@ export default function Hero() {
                     </p>
 
                     {/* Call to Action Buttons */}
-                    <div className="mt-9 flex flex-wrap gap-4">
+                    <div className="mt-7 flex flex-wrap gap-3 sm:mt-9 sm:gap-4">
 
                         <Link
                             href="/contact"
-                            className="rounded-sm bg-primary px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-orange-600"
+                            className="rounded-sm bg-primary px-5 py-3 text-xs font-semibold text-white transition-colors hover:bg-orange-600 sm:px-6 sm:text-sm"
                         >
                             Request a Quote →
                         </Link>
 
                         <Link
                             href="/products"
-                            className="rounded-sm border border-white/30 px-6 py-3 text-sm font-semibold text-white transition-colors hover:border-primary hover:text-primary"
+                            className="rounded-sm border border-white/30 px-5 py-3 text-xs font-semibold text-white transition-colors hover:border-primary hover:text-primary sm:px-6 sm:text-sm"
                         >
                             Explore Products →
                         </Link>
@@ -59,7 +59,7 @@ export default function Hero() {
                             fill
                             priority
                             className="object-cover"
-                            sizes="(max-width: 768px) 100vw, 50vw"
+                            sizes="(max-width: 1023px) 100vw, 50vw"
                         />
                     </div>
                 </div>
